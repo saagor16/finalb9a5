@@ -112,9 +112,9 @@
                         <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                     </div>
                     <!--Ticket-->
-                    <div class="mt-16 flex  bg-white rounded-2xl lg:pt-16 h-[460px]">
+                    <div class="mt-16 flex h-[580px]  bg-white rounded-2xl lg:pt-4 lg:h-[450px]">
                         <div class="w-3/5 pl-10 pr-10 pt-4 lg:pt-10">
-                            <div class="flex justify-between">
+                            <div class="flex justify-between  flex-col lg:flex-row">
                                 <div class="flex gap-x-2 flex-col lg:flex-row">
                                     <div>
                                         <img src="images/bus-logo.png" alt="">
@@ -125,30 +125,30 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn justify-between bg-green-100 h-[180px]">
+                                    <button class="btn justify-between bg-green-100">
                                         <img src="images/seat-green-filled.png" alt="">
                                         <a class="text-green-400">40 Seats left</a>
                                     </button>
                                 </div>
                             </div>
                             <!--route-->
-                            <div class="border rounded-2xl bg-[#F7F8F8] h-[360px] lg:h-[200px] mt-2 lg:mt-10 p-5 space-y-6 min-w-full">
-                                <div class="flex justify-between ">
+                            <div class="border rounded-2xl bg-[#F7F8F8] w-[200px] lg:min-w-full lg:h-[260px] mt-2 lg:mt-10 p-5 space-y-6  grid grid-cols-1">
+                                <div class="flex justify-between font-semibold">
                                     <p>Route</p>
                                     <h5>Dhaka-Sylhet</h5>
-                                </div>
-                                <div class="flex justify-between ">
+                                </div><hr>
+                                <div class="flex justify-between font-semibold">
                                     <p>Departure Time</p>
                                     <h5>9:00 PM</h5>
-                                </div>
-                                <div class="flex flex-col gap-y-2 justify-between">
-                                    <button class="btn">Boarding Point - Laxmipur</button>
-                                    <button class="btn">Dropping Point - Bogura</button>
-                                    <button class="btn">Est. Time - 11 Hour</button>
+                                </div><hr>
+                                <div class="flex flex-col lg:flex-row gap-y-2 justify-between">
+                                    <button class="btn">Boarding Point-Laxmipur</button>
+                                    <button class="btn">Dropping Point-Bogura</button>
+                                    <button class="btn">Est. Time-11 Hour</button>
                                 </div>
                             </div>
                         </div>
-                        <img src="images/info-devider.png" alt="">
+                        <img class="lg:h-[440px]" src="images/info-devider.png" alt="">
                         <div class="w-[30%] flex  flex-col justify-center items-center text-center ">
                             <img class="w-[50px] h-[50px]" src="images/fare.png" alt="">
                             <h2>550 Taka</h2>
@@ -159,9 +159,113 @@
     
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!--seat section-->
+        <section class="container mx-auto mt-16">
+            <div  class="w-[1200px] h-[1080px] flex gap-5" >
+             <!--seat plan-->
+                <div class="w-[70%] space-y-3">
+                    <h3>Select Your Seat</h3><hr>
+                    <div class="flex justify-between mt-2">
+                        <div class="flex">
+                             <img src="images/seat-gray.png" alt="">
+                             <p>Available</p>
+                        </div>
+                        <div class="flex">
+                                <img src="images/seat-green-filled.png" alt="">
+                             <p>Selected</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-dashed "></div>
+            
+                <!--log in-->
+                <div>
+                    <h3>Select Your Seat</h3><hr>
+                    <div class="h-[840px] w-[450px] bg-white">
+                        <!--first part-->
+                        <div class="h-[350px] w-[450px] bg-[#F7F8F8] rounded-xl">
+                            <div>
+                                <div class="flex justify-between">
+                                    <h4>Seat</h4>
+                                    <h4>Class</h4>
+                                    <h4>Price</h4>
+                                </div><hr>
+                                <div class="flex justify-between">
+                                    <h4>C2</h4>
+                                    <h4>Economy</h4>
+                                    <h4>550</h4>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h4>C2</h4>
+                                    <h4>Economy</h4>
+                                    <h4>550</h4>
+                                </div><hr>
+                            </div>
+                            <div>
+                                <div class="flex justify-between">
+                                    <h3>Total Price</h3>
+                                    <h3>BDT 1100</h3>
+                                </div>
+                                <div>
+                                    <label class="input input-bordered flex items-center gap-2">
+                                        <input type="text" class="grow" placeholder="Have any copupon?" />
+                                        <button class="btn">Apply</button>
+                                      </label>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h3>Total Price</h3>
+                                    <h3>BDT 1100</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2nd part-->
+                        <div class="space-y-5">
+                            <div class="space-y-4">
+                                <h3>Passenger Name*</h3>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered min-w-full max-w-xs" />
+                            </div>
+                            <div class="space-y-4">
+                                <h3>Phone Number*</h3>
+                                <input type="text" placeholder="Enter your phone number" class="input input-bordered min-w-full max-w-xs" />
+                            </div>
+                            <div class="space-y-4">
+                                <h3>Email ID</h3>
+                                <input type="text" placeholder="Enter your email id" class="input input-bordered min-w-full max-w-xs" />
+                            </div>
+                            <button class="btn w-full">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!--footer-->
+    <footer class="bg-black text-white">
+        <div class="flex pt-16  pb-4  justify-around">
+            <div>
+                <h1>Brother-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div class="text-center">
+                <h3>Download our app</h3>
+                <img src="images/playstore.png" alt="">
+            </div>
+        </div><hr>
+        <div class="flex pt-12 justify-around pb-16">
+            <div>
+                <p>@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div class="flex space-x-4">
+                <h3>Terms & condition</h3>
+                <h3>Return & refund policy</h3>
+                <h3>Privacy policy</h3>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
