@@ -89,5 +89,5 @@ apply.addEventListener('click',function(){
 const final = document.getElementById('final-btn');
 
 final.addEventListener('click',function(){
-    showElementById('last-section');
+
 });
