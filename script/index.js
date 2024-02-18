@@ -22,6 +22,11 @@ for (const btn of allButton) {
         seat = seat-1;
         document.getElementById('total-seat').innerText = seat;
 
+        if (count >= 4) {
+            disableButtons();
+        }
+        btn.disabled = true;
+
 
         // seat-class-price
         const seatClass = document.getElementById('seat-class');
