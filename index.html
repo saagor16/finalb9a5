@@ -130,7 +130,7 @@
                                 <div>
                                     <button class="btn justify-between bg-green-100">
                                         <img src="images/seat-green.png" alt="">
-                                        <a class="text-green-400">40 Seats left</a>
+                                        <a class="text-green-400"><span id="total-seat">40</span> Seats left</a>
                                     </button>
                                 </div>
                             </div>
@@ -293,31 +293,32 @@
                                 <div class="flex justify-between ">
                                     <div class="flex ">
                                         <h4 class="relative font-bold">Seat</h4>
-                                        <p class="text-white bg-[#1DD100]">0</p>
+                                        <p id="ticket-count" class="text-white bg-[#1DD100]">0</p>
                                     </div>
                                     <h4 class="font-bold">Class</h4>
                                     <h4 class="font-bold">Price</h4>
                                 </div><hr>
                             </div>
-                            <div>
-                                <div id="seat-class" class="grid grid-cols-3">
-                                   
-                                </div><hr>
-                            </div>
-                            <div class="space-y-5">
+
+                            <div class="space-y-5 min-h-full">
+                                <div>
+                                    <div id="seat-class" class="grid grid-cols-3">
+                                       
+                                    </div><hr>
+                                </div>
                                 <div class="flex justify-between">
                                     <h3 class="font-bold text-2xl" >Total Price</h3>
                                     <h3 class="font-bold text-2xl">BDT <span id="totalTaka">0</span></h3>
                                 </div>
                                 <div>
                                     <label class="input input-bordered flex items-center gap-2">
-                                        <input id="input" type="text" class="grow" placeholder="Have any copupon?" />
-                                        <button id="apply-btn" class="btn text-white  bg-[#1DD100]">Apply</button>
+                                        <input id="input-field" type="text" class="grow" placeholder="Have any copupon?" />
+                                        <button id="apply-btn" class="btn text-white bg-[#1DD100]">Apply</button>
                                       </label>
                                 </div>
                                 <div class="flex justify-between">
                                     <h3  class="font-bold text-2xl">Grand Price</h3>
-                                    <h3  class="font-bold text-2xl">BDT <span >0</span></h3>
+                                    <h3  class="font-bold text-2xl">BDT <span id="grand-total">0</span></h3>
                                 </div>
                             </div>
                         </div>

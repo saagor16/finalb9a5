@@ -3,6 +3,8 @@ document.getElementById('first-btn').addEventListener('click', function() {
     document.getElementById('main-section').scrollIntoView({ behavior: 'smooth' });
 });
 let totalTaka = 0;
+let count =0;
+let seat = 40;
 const allButton = document.getElementsByClassName('primary');
 
 for (const btn of allButton) {
@@ -11,6 +13,16 @@ for (const btn of allButton) {
     btn.addEventListener('click', function(){
         btn.style.backgroundColor = '#1DD100';
         btn.style.color = 'white';
+
+        //count
+        count = count+1;
+        document.getElementById('ticket-count').innerText = count;
+
+        // seat left
+        seat = seat-1;
+        document.getElementById('total-seat').innerText = seat;
+
+
         // seat-class-price
         const seatClass = document.getElementById('seat-class');
         const title = btn.innerText;
@@ -29,6 +41,7 @@ for (const btn of allButton) {
         const ticketPrice =parseFloat(document.getElementById('price').innerText);
         totalTaka += ticketPrice;
         document.getElementById('totalTaka').innerText = totalTaka ;
+        document.getElementById("grand-total").innerText = totalTaka;
     })
 
   
@@ -36,9 +49,25 @@ for (const btn of allButton) {
 const apply = document.getElementById('apply-btn');
 apply.addEventListener('click',function(){
     // console.log('my name');
-
+    const couponText = document.getElementById('input-field').value;
     //input
-    const inputTeg = document.getElementById('input').value;
-    // console.log(inputTeg.value)
+    if(couponText === "NEW15"){
+        const discountAmount = totalTaka * 0.15;
+        const afterDiscount = totalTaka - discountAmount;
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = afterDiscount;
+        document.getElementById("input-field").value = "";
+      }
+      else if(couponText === "Couple 20"){
+        const discountAmount = totalTaka * 0.2;
+        const afterDiscount = totalTaka - discountAmount;
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = afterDiscount;
+        document.getElementById("input-field").value = "";
+      }
 
+      else{
+        alert('invalid coupon')
+        document.getElementById("input-field").value = "";
+      }
 })
