@@ -26,6 +26,10 @@ for (const btn of allButton) {
             disableButtons();
             document.getElementById("apply-btn").removeAttribute('disabled', 'disabled');
         }
+        const name = document.getElementById('num');
+        if(count===1){
+            document.getElementById("final-btn").removeAttribute('disabled', 'disabled');
+        }
         btn.disabled = true;
 
 
@@ -83,6 +87,7 @@ apply.addEventListener('click',function(){
 })
 
 const final = document.getElementById('final-btn');
+
 final.addEventListener('click',function(){
-    
-})
+    showElementById('last-section');
+});

@@ -330,13 +330,31 @@
                             </div>
                             <div class="space-y-4">
                                 <h3 class="font-bold text-xl">Phone Number*</h3>
-                                <input type="number" placeholder="Enter your phone number" class="input input-bordered min-w-full max-w-xs" />
+                                <input id="num" type="number" placeholder="Enter your phone number" class="input input-bordered min-w-full max-w-xs" />
                             </div>
                             <div class="space-y-4">
                                 <h3 class="font-bold text-xl">Email ID</h3>
                                 <input type="email" placeholder="Enter your email id" class="input input-bordered min-w-full max-w-xs" />
                             </div>
-                            <button id="final-btn" class="btn w-full  text-white bg-[#1DD100]">Next</button>
+                            <!-- <button id="final-btn" class="btn w-full  text-white bg-[#1DD100]" disabled>Next</button> -->
+                            <!-- The button to open modal -->
+                            <a href="#my_modal_8" id="final-btn" class="btn w-full  text-white bg-[#1DD100]" disabled>Next</a>
+                            <div class="modal" role="dialog" id="my_modal_8">
+                              <div class="modal-box">
+                                <div class="text-center">
+
+                                    <div class=" flex justify-center pt-6">
+                                        <img class="" src="images/success.png" alt="">
+                                    </div>
+                                    <h4 class="font-extrabold text-2xl">SUCCESS</h4>
+                                    <p class="font-bold">Thank you for Booking Our Bus .</p>
+                                    <p>Shortly you will find a confirmation in your email.</p>
+                                </div>
+                                <div class="modal-action justify-center">
+                                 <a href="#" class="btn text-white bg-green-600 rounded-2xl w-[70%] border-none ">Continue</a>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                         <div class="flex mt-6 justify-around">
                             <p>Terms and Conditions</p>
@@ -374,19 +392,6 @@
             </div>
         </div>
     </footer>
-
-    <section class="min-w-full min-h-full mt-10 mb-10 b">
-        <div class="lg:w-[600px]  h-[330px] border bg-gray-300 m-auto text-center  space-y-2">
-
-            <div class=" flex justify-center pt-6">
-                <img class="" src="images/success.png" alt="">
-            </div>
-            <h4 class="font-extrabold text-2xl">SUCCESS</h4>
-            <p class="font-bold">Thank you for Booking Our Bus .</p>
-            <p>Shortly you will find a confirmation in your email.</p>
-            <button class="btn text-white bg-green-600 rounded-2xl w-[70%] border-none">Continue</button>
-        </div>
-    </section>
 
     <script src="script/app.js"></script>
     <script src="script/index.js"></script>
