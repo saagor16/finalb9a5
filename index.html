@@ -310,10 +310,10 @@
                                     <h3 class="font-bold text-2xl" >Total Price</h3>
                                     <h3 class="font-bold text-2xl">BDT <span id="totalTaka">0</span></h3>
                                 </div>
-                                <div>
+                                <div  id="label-input">
                                     <label class="input input-bordered flex items-center gap-2">
                                         <input id="input-field" type="text" class="grow" placeholder="Have any copupon?" />
-                                        <button id="apply-btn" class="btn text-white bg-[#1DD100]">Apply</button>
+                                        <button id="apply-btn" class="btn text-white bg-[#1DD100]" disabled>Apply</button>
                                       </label>
                                 </div>
                                 <div class="flex justify-between">
@@ -336,7 +336,7 @@
                                 <h3 class="font-bold text-xl">Email ID</h3>
                                 <input type="email" placeholder="Enter your email id" class="input input-bordered min-w-full max-w-xs" />
                             </div>
-                            <button class="btn w-full  text-white bg-[#1DD100]">Next</button>
+                            <button id="final-btn" class="btn w-full  text-white bg-[#1DD100]">Next</button>
                         </div>
                         <div class="flex mt-6 justify-around">
                             <p>Terms and Conditions</p>
@@ -374,6 +374,19 @@
             </div>
         </div>
     </footer>
+
+    <section class="min-w-full min-h-full mt-10 mb-10 b">
+        <div class="lg:w-[600px]  h-[330px] border bg-gray-300 m-auto text-center  space-y-2">
+
+            <div class=" flex justify-center pt-6">
+                <img class="" src="images/success.png" alt="">
+            </div>
+            <h4 class="font-extrabold text-2xl">SUCCESS</h4>
+            <p class="font-bold">Thank you for Booking Our Bus .</p>
+            <p>Shortly you will find a confirmation in your email.</p>
+            <button class="btn text-white bg-green-600 rounded-2xl w-[70%] border-none">Continue</button>
+        </div>
+    </section>
 
     <script src="script/app.js"></script>
     <script src="script/index.js"></script>

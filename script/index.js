@@ -24,6 +24,7 @@ for (const btn of allButton) {
 
         if (count >= 4) {
             disableButtons();
+            document.getElementById("apply-btn").removeAttribute('disabled', 'disabled');
         }
         btn.disabled = true;
 
@@ -55,6 +56,7 @@ const apply = document.getElementById('apply-btn');
 apply.addEventListener('click',function(){
     // console.log('my name');
     const couponText = document.getElementById('input-field').value;
+
     //input
     if(couponText === "NEW15"){
         const discountAmount = totalTaka * 0.15;
@@ -62,6 +64,8 @@ apply.addEventListener('click',function(){
         const grandTotal = document.getElementById('grand-total');
         grandTotal.innerText = afterDiscount;
         document.getElementById("input-field").value = "";
+
+
       }
       else if(couponText === "Couple 20"){
         const discountAmount = totalTaka * 0.2;
@@ -74,5 +78,11 @@ apply.addEventListener('click',function(){
       else{
         alert('invalid coupon')
         document.getElementById("input-field").value = "";
-      }
+    }
+    document.getElementById('label-input').style.display = 'none';
+})
+
+const final = document.getElementById('final-btn');
+final.addEventListener('click',function(){
+    
 })
