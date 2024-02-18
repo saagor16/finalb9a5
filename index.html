@@ -37,7 +37,7 @@
                 </div>
                 <div class="navbar-end">
                     <button class="btn bg-green-100">
-                        <a class="text-[#1DD100]">Button</a>
+                        <a id="buy-btn" class="text-[#1DD100]">Button</a>
                         <img src="images/bus-icon.png" alt="">
                     </button>
                 </div>
@@ -57,7 +57,7 @@
                     <p class="mb-5">Online Ticketing made easy!
                         Book your ticket the smarter way.
                         Buy tickets online hassle-free.</p>
-                    <button class="btn bg-[#1DD100] text-black border-none">Buy Tickets</button>
+                    <button id="first-btn" class="btn bg-[#1DD100] text-black border-none">Buy Tickets</button>
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@
     </header>
 
 
-    <main class="min-w-full mt-16 bg-[#FFFFFF]">
+    <main id="main-section" class="min-w-full mt-16 bg-[#FFFFFF] border-t-2 rounded-t-2xl border-green-500">
         <!--ticket section-->
         <section class="container mx-auto">
             <div class="pt-16 ">
@@ -182,7 +182,7 @@
                         </div>
                     </div><hr>
                     <div class="flex justify-end mb-0 mt-4">
-                        <button class="btn w-24 mt-6 mr-4"><img class="" src="images/driver.svg" alt="" /></button>
+                        <button class="btn w-24 mt-6 mr-4 bg-gray-400"><img class="" src="images/driver.svg" alt="" /></button>
                       </div>
                     <div class="flex lg:flex-row justify-between mt-6">
                         
@@ -288,11 +288,12 @@
                     <h3 class="font-bold">Select Your Seat</h3><hr>
                     <div class="h-[840px] ">
                         <!--first part-->
-                        <div class="min-w-full h-[30%] p-4 bg-[#F7F8F8] rounded-xl space-y-5">
+                        <div class="min-w-full h-[35%] p-4 bg-[#F7F8F8] rounded-xl space-y-5">
                             <div>
                                 <div class="flex justify-between ">
-                                    <div>
+                                    <div class="flex ">
                                         <h4 class="relative font-bold">Seat</h4>
+                                        <p class="text-white bg-[#1DD100]">0</p>
                                     </div>
                                     <h4 class="font-bold">Class</h4>
                                     <h4 class="font-bold">Price</h4>
@@ -374,5 +375,8 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="script/index.js"></script>
 </body>
 </html>
