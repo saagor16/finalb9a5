@@ -1,7 +1,4 @@
-// scrolling
-document.getElementById('first-btn').addEventListener('click', function() {
-    document.getElementById('main-section').scrollIntoView({ behavior: 'smooth' });
-});
+
 let totalTaka = 0;
 let count =0;
 let seat = 40;
@@ -46,15 +43,12 @@ for (const btn of allButton) {
         seatClass.appendChild(p2);
         seatClass.appendChild(p3);
 
-
         //totalPrice
         const ticketPrice =parseFloat(document.getElementById('price').innerText);
         totalTaka += ticketPrice;
         document.getElementById('totalTaka').innerText = totalTaka ;
         document.getElementById("grand-total").innerText = totalTaka;
-    })
-
-  
+    })  
 }
 const apply = document.getElementById('apply-btn');
 apply.addEventListener('click',function(){
