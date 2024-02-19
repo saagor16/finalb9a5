@@ -48,7 +48,11 @@ for (const btn of allButton) {
         totalTaka += ticketPrice;
         document.getElementById('totalTaka').innerText = totalTaka ;
         document.getElementById("grand-total").innerText = totalTaka;
-    })  
+        
+    })
+    
+    
+     
 }
 const apply = document.getElementById('apply-btn');
 apply.addEventListener('click',function(){
@@ -78,5 +82,20 @@ apply.addEventListener('click',function(){
         document.getElementById("input-field").value = "";
     }
     document.getElementById('label-input').style.display = 'none';
-})
+    
+});
+
+const next = document.getElementById('final-btn');
+  
+    next.addEventListener('click', function(){
+ 
+  
+      document.getElementById('totalTaka').innerText = 0;
+      document.getElementById('grand-total').innerText = 0;
+      document.getElementById('seat-class').innerText = "";
+      document.getElementById("input-field").value = "";
+      document.getElementById('ticket-count').innerText = 40;
+      document.getElementById('ticket-count').innerText = 0;
+      
+    })
 
