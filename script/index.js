@@ -93,7 +93,7 @@ const next = document.getElementById('final-btn');
       document.getElementById('grand-total').innerText = 0;
       document.getElementById('seat-class').innerText = "";
       document.getElementById("input-field").value = "";
-      document.getElementById('ticket-count').innerText = 40;
+      document.getElementById('total-seat').innerText = 40;
       document.getElementById('ticket-count').innerText = 0;
       
 });
