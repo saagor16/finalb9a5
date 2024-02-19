@@ -21,27 +21,30 @@ for (const btn of allButton) {
 
         if (count >= 4) {
             disableButtons();
-            document.getElementById("apply-btn").removeAttribute('disabled', 'disabled');
+            document.getElementById("apply-btn").removeAttribute('disabled' );
         }
 
         if(count===1){
-            document.getElementById("final-btn").removeAttribute('disabled', 'disabled');
+            document.getElementById("final-btn").removeAttribute('disabled');
         }
         btn.disabled = true;
 
 
-        // seat-class-price
-        const seatClass = document.getElementById('seat-class');
-        const title = btn.innerText;
-        const p = document.createElement('p');
+         // seat-class-price
+        const text= btn.innerText;
+        const container = document.getElementById('seat-class');
+        const div = document.createElement('div');
+        const p1 = document.createElement('p');
+        p1.innerText = text;
         const p2 = document.createElement('p');
+        p2.innerText = 'Economy';
         const p3 = document.createElement('p');
-        p.innerText = title;
-        p2.innerText ='Economy'
         p3.innerText = parseFloat(document.getElementById('price').innerText);
-        seatClass.appendChild(p);
-        seatClass.appendChild(p2);
-        seatClass.appendChild(p3);
+        div.appendChild(p1);
+        div.appendChild(p2);
+        div.appendChild(p3);
+        div.classList.add("my-div")     
+        container.appendChild(div);
 
         //totalPrice
         const ticketPrice =parseFloat(document.getElementById('price').innerText);
@@ -49,10 +52,7 @@ for (const btn of allButton) {
         document.getElementById('totalTaka').innerText = totalTaka ;
         document.getElementById("grand-total").innerText = totalTaka;
         
-    })
-    
-    
-     
+    })    
 }
 const apply = document.getElementById('apply-btn');
 apply.addEventListener('click',function(){
@@ -88,14 +88,15 @@ apply.addEventListener('click',function(){
 const next = document.getElementById('final-btn');
   
     next.addEventListener('click', function(){
- 
+
+    // window.location.reload();
   
-      document.getElementById('totalTaka').innerText = 0;
-      document.getElementById('grand-total').innerText = 0;
-      document.getElementById('seat-class').innerText = "";
-      document.getElementById("input-field").value = "";
-      document.getElementById('ticket-count').innerText = 40;
-      document.getElementById('ticket-count').innerText = 0;
+    //   document.getElementById('totalTaka').innerText = 0;
+    //   document.getElementById('grand-total').innerText = 0;
+    //   document.getElementById('seat-class').innerText = "";
+    //   document.getElementById("input-field").value = "";
+    //   document.getElementById('ticket-count').innerText = 40;
+    //   document.getElementById('ticket-count').innerText = 0;
       
-    })
+})
 

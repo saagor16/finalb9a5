@@ -2,3 +2,8 @@
 .poppins{
     font-family: "Poppins", sans-serif;
   }
+
+  .my-div{
+    display: flex;
+    justify-content: space-between;
+  }
