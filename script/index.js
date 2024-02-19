@@ -89,14 +89,14 @@ const next = document.getElementById('final-btn');
   
     next.addEventListener('click', function(){
 
-    // window.location.reload();
-  
-    //   document.getElementById('totalTaka').innerText = 0;
-    //   document.getElementById('grand-total').innerText = 0;
-    //   document.getElementById('seat-class').innerText = "";
-    //   document.getElementById("input-field").value = "";
-    //   document.getElementById('ticket-count').innerText = 40;
-    //   document.getElementById('ticket-count').innerText = 0;
+      document.getElementById('totalTaka').innerText = 0;
+      document.getElementById('grand-total').innerText = 0;
+      document.getElementById('seat-class').innerText = "";
+      document.getElementById("input-field").value = "";
+      document.getElementById('ticket-count').innerText = 40;
+      document.getElementById('ticket-count').innerText = 0;
       
-})
+});
+
+
 
