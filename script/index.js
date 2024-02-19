@@ -23,7 +23,7 @@ for (const btn of allButton) {
             disableButtons();
             document.getElementById("apply-btn").removeAttribute('disabled', 'disabled');
         }
-        const name = document.getElementById('num');
+
         if(count===1){
             document.getElementById("final-btn").removeAttribute('disabled', 'disabled');
         }
@@ -80,8 +80,3 @@ apply.addEventListener('click',function(){
     document.getElementById('label-input').style.display = 'none';
 })
 
-const final = document.getElementById('final-btn');
-
-final.addEventListener('click',function(){
-
-});
